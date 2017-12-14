@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Outputs the expected tree 1`] = `
+<footer
+  className="footer inverted"
+>
+  <div
+    className="container"
+  >
+    Copyright whenever, whoever.
+    <a
+      href="/privacy-policy"
+      onClick={[Function]}
+    >
+      Privacy Policy
+    </a>
+    <a
+      href="/terms-of-service"
+      onClick={[Function]}
+    >
+      Terms of Service
+    </a>
+  </div>
+</footer>
+`;

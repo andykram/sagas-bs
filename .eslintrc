@@ -1,0 +1,54 @@
+{
+  "env": {
+    "jest/globals": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": [
+    "airbnb",
+    "plugin:jest/recommended"
+  ],
+  "plugins": [
+    "jest"
+  ],
+  "rules": {
+    "import/extensions": ["error", "always", {
+      "js": "never",
+      "jsx": "never",
+      "scss": "never"
+    }],
+
+    "jsx-a11y/anchor-is-valid": [ "error", {
+      "components": [ ],
+      "specialLink": [ "hrefLeft", "hrefRight" ],
+      "aspects": [ "noHref", "invalidHref", "preferButton" ]
+    }],
+
+    "jsx-a11y/label-has-for": [ "error", {
+      "components": [ "Label" ],
+      "required": {
+        "some": [ "nesting", "id" ]
+      },
+      "allowChildren": false,
+    }],
+
+    "consistent-return": ["warn"],
+    "no-mixed-operators": ["error", {"allowSamePrecedence": true}],
+    "no-param-reassign": ["warn"],
+    "require-yield": 0,
+    "no-constant-condition": 0,
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack/lint.babel.js",
+      }
+    },
+    "import/extensions": ["", ".js", ".jsx", ".css", ".json"]
+  }
+}
+

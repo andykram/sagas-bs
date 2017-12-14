@@ -1,0 +1,25 @@
+{
+  "presets": [
+    "babel-preset-stage-2",
+    "babel-preset-react"
+  ],
+  "plugins": [
+    "transform-es2015-modules-commonjs",
+    "transform-export-extensions",
+    "transform-es2015-object-super",
+    "transform-class-properties",
+    "transform-es2015-classes",
+    "transform-react-constant-elements",
+    "transform-react-inline-elements",
+    "minify-constant-folding",
+    "minify-dead-code-elimination",
+    "minify-infinity",
+    "minify-numeric-literals",
+    "minify-replace",
+    "transform-merge-sibling-variables",
+    "transform-minify-booleans",
+    "transform-regexp-constructors",
+    "transform-remove-undefined",
+    "transform-undefined-to-void"
+  ]
+}

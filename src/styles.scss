@@ -1,0 +1,8 @@
+// Core variables and mixins
+@import "theme";
+@import "~bootstrap/scss/bootstrap";
+
+::selection {
+  background: theme-color("primary");
+  color: #fff;
+}

@@ -1,0 +1,14 @@
+@import "~bootstrap/scss/_functions";
+@import "~bootstrap/scss/_variables";
+
+// This overrides bootstrap default styles.
+
+// Colors
+$blue: #31bef8;
+
+// Fonts
+$font-family-sans-serif: "Lato", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$lead-font-size: 2rem;
+
+// Jumbotron
+$jumbotron-padding: 1rem;
