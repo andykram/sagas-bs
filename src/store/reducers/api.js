@@ -26,7 +26,9 @@ export const mergeApiResponse = (state, res) => ({
 export default (state = DEFAULT, action) => {
   switch (action.type) {
     case (apiAction.API_RECEIVE):
-      return mergeApiResponse(state, action.payload);
+      // return mergeApiResponse(state, action.payload);
+      console.log({ state, action, });
+      return Object.assign({}, state, action.body);
     default:
       return state;
   }
