@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node bin/build.js",
     "build:watch": "npm run build -- --watch",
-    "dev": "npm run build && (nodemon --watch bin --watch build bin/serve.js & npm run build:watch)",
+    "dev": "export NODE_ENV=development&& npm run build && (nodemon --watch bin --watch build bin/serve.js & npm run build:watch)",
     "serve": "node bin/serve.js",
     "lint": "eslint src lib --ext .js,.jsx",
     "test": "jest",
